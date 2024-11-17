@@ -130,3 +130,87 @@ else return z ;
 
 
 console.log('Exercise 6 Result:', maxOfThree(50, 10, 1));
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+Complete the exercise in the space below:
+*/
+const calculateTip =(billAmount ,tipPercentage)=> {
+let x =(billAmount*(tipPercentage/100));
+return x ;
+}
+
+
+console.log('Exercise 7 Result:', calculateTip(20, 20));
+
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+const convertTemperature=(temperature ,scale)=>{
+  // let scale = string ;
+   //let x = number ;
+if (scale === "c" || scale ==="C")
+//{console.log(`${temperature} Fahernheit`)
+{return x = temperature*(9/5) +32 }//F = C(9 ⁄ 5) + 32.
+ else if (scale === "f" || scale ==="F")
+   // {console.log(`${temperature} Celsius`)
+ {  return x = (temperature-32)*5/9} //C = (F − 32) × 5 ⁄ 9
+
+
+
+
+else {console.log("Change the temperature scale first")};
+
+
+
+
+}
+
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+const basicCalculator = (a,b,operation)=>{
+    if (operation === "subtract")
+        {return x = a - b} 
+else if (operation === "add")
+{return x = a +b }
+else if (operation === "multiply")
+{return x = a*b}
+else if (operation === "divide")
+{return x = a/b}
+
+};
+
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
